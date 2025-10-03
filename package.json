@@ -1,0 +1,25 @@
+{
+  "name": "projet_devop_konatebeh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "test:ci": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konatebeh20/projet_devop_KONATEBeh.git"
+  },
+  "keywords": [],
+  "author": "Konaté Beh",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/konatebeh20/projet_devop_KONATEBeh/issues"
+  },
+  "homepage": "https://github.com/konatebeh20/projet_devop_KONATEBeh#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
