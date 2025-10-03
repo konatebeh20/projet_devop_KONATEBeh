@@ -1,21 +1,9 @@
-import js from "@eslint/js";
-import globals from "globals";
+const { addition, multiplication } = require('../src/calcul');
 
-export default [
-  
-  js.configs.recommended,
-  {
-    files: ["**/*.js"],
-    languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "commonjs",
-      globals: {
-        ...globals.node,
-        ...globals.jest, // ✅ Ajout des globals Jest (test, expect, describe…)
-      },
-    },
-    rules: {
-      // tes règles perso ici si besoin
-    },
-  },
-];
+test('addition de 2 + 3 = 5', () => {
+  expect(addition(2, 3)).toBe(5);
+});
+
+test("multiplication de 2 * 3 = 6", ()=>{
+    expect(multiplication(2, 3)).toBe(6);
+});
